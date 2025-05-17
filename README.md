@@ -1,0 +1,2 @@
+`brew --prefix llvm`/bin/clang++ --target=arm-linux-gnueabihf --sysroot=$HOME/sysroot -isysroot=$HOME/sysroot -isystem=$HOME/sysroot/usr/include/c++/10 -isystem=$HOME/sysroot/usr/include/arm-linux-gnueabihf/c++/10 -L$HOME/sysroot/usr/lib/gcc/arm-linux-gnueabihf/10 -B$HOME/sysroot/usr/lib/gcc/arm-linux-gnueabihf/10 --gcc-toolchain=`brew --prefix arm-linux-gnueabihf-binutils` -o hello hello.cpp
+scp hello jinelei@pi:~

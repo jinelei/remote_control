@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/zhenlei/sysroot/usr/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "${default}",
+            "compilerArgs": [
+                "--sysroot /Users/zhenlei/sysroot",
+                "-isysroot /Users/zhenlei/sysroot",
+                "-isystem /Users/zhenlei/sysroot/usr/include",
+                "-isystem /Users/zhenlei/sysroot/usr/include/c++/10 ",
+                "-isystem /Users/zhenlei/sysroot/usr/include/arm-linux-gnueabihf/c++/10",
+                "-L /Users/zhenlei/sysroot/usr/lib/gcc/arm-linux-gnueabihf/10",
+                "-B /Users/zhenlei/sysroot/usr/lib/gcc/arm-linux-gnueabihf/10",
+                "--gcc-toolchain `brew --prefix arm-linux-gnueabihf-binutils` "
+            ]
+        }
+    ],
+    "version": 4
+}
